@@ -15,6 +15,41 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
+
+//
+// Color Swatches
+// --------------------------------------------------
+@turquoise:     #1abc9c;
+@green-sea:     #16a085;
+
+@emerland:      #2ecc71;
+@nephritis:     #27ae60;
+
+@peter-river:   #3498db;
+@belize-hole:   #2980b9;
+
+@amethyst:      #9b59b6;
+@wisteria:      #8e44ad;
+
+@wet-asphalt:   #34495e;
+@midnight-blue: #2c3e50;
+
+@sun-flower:    #f1c40f;
+@orange:        #f39c12;
+
+@carrot:        #e67e22;
+@pumpkin:       #d35400;
+
+@alizarin:      #e74c3c;
+@pomegranate:   #c0392b;
+
+@clouds:        #ecf0f1;
+@silver:        #bdc3c7;
+
+@concrete:      #95a5a6;
+@asbestos:      #7f8c8d;
+
+
 // Brand colors
 // -------------------------
 
@@ -30,19 +65,45 @@
 @body-bg:               #fff;
 @text-color:            @gray-dark;
 
-// Links
+//
+// Main Colors
 // -------------------------
+@base:             @wet-asphalt;
+@firm:             @turquoise;
 
-@link-color:            @brand-primary;
-@link-hover-color:      darken(@link-color, 15%);
+@gray:             @concrete;
+@lightgray:        @silver;
+@inverse:          white;
+
+@success:          @emerland;
+@danger:           @alizarin;
+@warning:          @sun-flower;
+@info:             @peter-river;
+
+
 
 // Typography
 // -------------------------
+@base-font-family:  'Lato', sans-serif;
+@base-font-size:    14px;
+@base-line-height:  1.231;
+@pre-border-radius: 6px;
+@pre-background:    transparent;
+@pre-border-color:  mix(@base, @inverse, 12%);
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+// // Links
+// // -------------------------
+
+@link-color:       @green-sea;
+@link-hover-color: @turquoise;
+
+// // Typography
+// // -------------------------
+
+// @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+// @font-family-serif:       Georgia, "Times New Roman", Times, serif;
+// @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        'Lato', sans-serif;
 
 @font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
@@ -217,6 +278,19 @@
 @navbar-inverse-search-border:              @navbar-inverse-bg;
 @navbar-inverse-search-placeholder-color:   #ccc;
 
+
+
+// Navs
+// -------------------------
+@nav-tabs-border-width:  2px;
+@nav-tabs-border-color:  mix(@base, white, 15%);
+@nav-tabs-color:         mix(@base, white, 63%);
+@nav-tabs-active-color:  mix(@base, white, 63%);
+@nav-tabs-hover-color:   @firm;
+@nav-border-radius:      6px;
+@nav-item-border-radius: @nav-border-radius - @nav-tabs-border-width;
+@nav-open-zindex:        1001;
+@nav-list-gap:           13px;
 
 // Pagination
 // -------------------------

@@ -1,7 +1,7 @@
 // Core variables and mixins
 @import "variables.less";
 @import "mixins.less";
-
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 // Reset
 @import "normalize.less";
 @import "print.less";
@@ -13,6 +13,7 @@
 
 @import "forms.less";
 @import "buttons.less";
+@import "alerts.less";
 
 // Components: common
 @import "component-animations.less";
@@ -34,3 +35,81 @@
 // Utility classes
 @import "utilities.less"; // Has to be last to override when necessary
 @import "responsive-utilities.less";
+
+
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+	  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+a {
+  .transition(.1s color linear);
+}
+
+.content {
+  margin-top: 20px;
+}
+
+header {
+  margin-top: 20px;
+
+  .logo {
+    background: url("../images/logo.png") no-repeat 0 0;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition:all .5s ease-out;
+    -moz-transition:all .5s ease-out;
+    -ms-transition:all .5s ease-out;
+    -o-transition:all .5s ease-out;
+    transition:all .5s ease-out;
+
+    &:hover {
+      -webkit-transform:translate(0px,10px);
+      -moz-transform:translate(0px,-10px);
+      -ms-transform:translate(0px,-10px);
+      -o-transform:translate(0px,10px);
+      transform:translate(0px,-10px);
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'Lato', sans-serif;
+}

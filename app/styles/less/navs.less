@@ -124,20 +124,20 @@
     // Links rendered as pills
     > a {
       border-radius: 5px;
+
+      // Active state
+      &.active {
+	&,
+	&:hover,
+	&:focus {
+	  color: #fff;
+	  background-color: @component-active-bg;
+	}
+      }
     }
     + li {
       > a {
         margin-left: 2px;
-      }
-    }
-
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: #fff;
-        background-color: @component-active-bg;
       }
     }
   }

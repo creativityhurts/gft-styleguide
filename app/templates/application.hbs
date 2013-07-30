@@ -1,10 +1,10 @@
 <div class="container">
  <header>
-   <h1>Frontend developent styleguide</h1>
-   <h3>It's dangerous to go alone. Take this!</h3>
+   {{#linkTo "index" class="logo"}}{{/linkTo}}
+   <h1>{{#linkTo "index"}}Frontend developent styleguide{{/linkTo}}</h1>
 
    <ul class="nav nav-tabs">
-     <li>{{#linkTo "css"}}CSS{{/linkTo}}</li>
+     <li>{{#linkTo "css.overall"}}CSS{{/linkTo}}</li>
      <li>{{#linkTo "html"}}HTML{{/linkTo}}</li>
    </ul>
  </header>
